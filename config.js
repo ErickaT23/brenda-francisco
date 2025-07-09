@@ -17,7 +17,7 @@ export const eventData = {
       mapLink: "https://maps.app.goo.gl/EuDBJDjDVKTorNGE6"
     },
     reception: {
-      receptionImage:"/images/reception.png",
+      receptionImage:"/images/recepcion.png",
       place: "Hotel Emporio Cancún",
       address: "Terraza principal",
       date: "26 de Febrero",
@@ -50,7 +50,7 @@ export const eventData = {
       }
     },  
 
-    finalPhoto: "/images/10.png",
+    finalPhoto: "/images/foto-final.png",
     finalMessage: "Acompáñanos en el inicio de nuestro Felices Para Siempre",
     rsvp: {
       rsvpImage: "/images/rsvp.png",
