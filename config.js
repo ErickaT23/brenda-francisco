@@ -2,7 +2,7 @@ export const eventData = {
     couple: {
       names: "Brenda & Francisco",
       date: "26 . 02 . 2026",
-      heroImage: "/images/pareja.png"
+      heroImage: "/images/BRENDAYFRANCISCO.png"
     },
     song: {
       title: "Que suerte tenerte - Fonseca",
@@ -31,12 +31,6 @@ export const eventData = {
         accountNumber: "0112233-444",
         accountType: "Monetaria"
       },
-      {
-        bank: "Banco Del Universo",
-        accountName: "Isa & Roberto",
-        accountNumber: "0112233-444",
-        accountType: "Monetaria"
-      }
     ],
     abroadGiftMessage: "Lo más importante es tu presencia, pero si deseas hacernos un regalo aquí tienes nuestros datos. ¡Muchas gracias!",
     giftImage: "/images/gift.png",
@@ -45,12 +39,12 @@ export const eventData = {
       description: "Hemos dejado estos links de inspiración para que puedas elegir tu atuendo. Reservado queda el color blanco e ivory para la novia.",
       image: "/images/dresscode.png",
       inspiration: {
-        women: "https://www.pinterest.com/search/pins/?q=Vestidos%20invitadas%20de%20boda%20de%20día",
-        men: "https://www.pinterest.com/search/pins/?q=Traje%20formal%20de%20hombres%20invitados%20a%20boda"
+        women: "https://es.pinterest.com/search/pins/?q=boda%20en%20la%20playa%20vestimenta%20invitados%20mujeres&rs=typed",
+        men: "https://es.pinterest.com/search/pins/?q=boda%20en%20la%20playa%20vestimenta%20invitados%20hombres&rs=typed"
       }
     },  
 
-    finalPhoto: "/images/foto-final.png",
+    finalPhoto: "/images/pareja-final.png",
     finalMessage: "Acompáñanos en el inicio de nuestro Felices Para Siempre",
     rsvp: {
       rsvpImage: "/images/rsvp.png",

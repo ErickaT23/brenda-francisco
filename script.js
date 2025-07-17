@@ -249,5 +249,20 @@ function addToCalendar() {
   }
   
   //OPTIMIZAR
+  // Acordeón para sección de hospedaje
+  document.querySelectorAll('.hotel-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.target;
+      const content = document.getElementById(targetId);
+
+      // Ocultar los demás
+      document.querySelectorAll('.hotel-content').forEach(div => {
+        if (div.id !== targetId) div.classList.add('hidden');
+      });
+
+      // Toggle el actual
+      content.classList.toggle('hidden');
+    });
+  });
 
   

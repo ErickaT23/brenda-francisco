@@ -4,12 +4,13 @@
     --background-color: white;
     --amarillo: #fff7cc;
     --beige:#faefb2;
-    --text-color: #77c8e2;
-    --accent-color: #77c7e2e7;
+    --text-color: #48D1CC;
+    --accent-color: white;
     
     /* Tipografías */
-    --font-title: 'The Girl Next Door', cursive;
-    --font-body: 'Give You Glory', cursive;
+    --font-title: 'Great Vibes', cursive;
+    --font-body: 'Cormorant Garamond', serif;
+    
     
     /* Tamaños de letra */
     --font-size-title: 3rem;
@@ -111,6 +112,7 @@
   #seal h2{
     margin: 0;
     font-size: 2.5rem;
+    color: #48D1CC;
   }
   /* Estado de apertura */
   .open #envelope-top {
@@ -128,11 +130,15 @@
     position: relative;
   }
   #hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 50px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0; /* Quitamos cualquier margen */    
   }
+  #hero {
+    position: relative;
+    padding: 0;
+  }  
   .hero-text {
     position: absolute;
     top: 50%;
@@ -143,10 +149,12 @@
     height: auto;
   }
   .hero-text h1 {
-    margin-top: -220px;
+    margin-top: -230px;
+    color: white;
   }
   .hero-text h2{
-    margin-top: -30px;
+    margin-top: -35px;
+    color: white;
   }
   /* SECCIÓN MÚSICA */
   #music-section {
@@ -154,11 +162,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
   }
-  
+  #music-section h2{
+    color: 	#48D1CC;
+  }
   button {
-    background: var(--accent-color);
-    color: white;
+    background: rgb(248, 244, 237);
+    color: 	#48D1CC;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -168,8 +181,8 @@
     transition: background 0.3s;
     font-family: var(--font-body);
     font-size: var(--font-size-text);
+    box-shadow: var(--shadow);
   }
-  
   button:hover {
     background: var(--text-color);
   }
@@ -187,7 +200,7 @@
   -webkit-appearance: none;
   width: 80%;
   height: 8px;
-  background: var(--beige); /* Color pastel base */
+  background: 	#48D1CC; /* Color pastel base */
   border-radius: 5px;
   outline: none;
   margin: 10px 0;
@@ -195,7 +208,7 @@
 
 /* Riel (fondo) */
 #progress-bar::-webkit-slider-runnable-track {
-  background: var(--beige);
+  background: 	#6bc7c4;
   height: 8px;
   border-radius: 5px;
 }
@@ -229,6 +242,20 @@
 }
 
   /* SECCIÓN CONTADOR */
+  #countdown-section {
+    background-image: url('/images/playa.png'); /* cambia el nombre según tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* opcional: para efecto parallax suave */
+    margin-top: -35px;
+  }
+  #marriage-announcement {
+    background-color: rgba(119, 119, 119, 0.212); /* blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
   #marriage-announcement {
     text-align: center;
     margin-bottom: 30px;
@@ -237,13 +264,14 @@
   #marriage-announcement h2 {
     font-family: var(--font-title);
     font-size: var(--font-size-title);
-    color: var(--text-color);
+    color: white;
     margin-bottom: 10px;
+    margin-top: 30px;
   }
   #marriage-announcement p {
     font-family: var(--font-body);
     font-size: var(--font-size-text);
-    color: var(--text-color);
+    color: white;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -255,7 +283,7 @@
     margin-top: 20px;
   }
   .unit {
-    background: var(transparent);
+    background: rgba(119, 119, 119, 0.212);
     padding: 0;
     border-radius: 100%;
     width: 100px;
@@ -265,6 +293,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow);
+    color: white;
   }
   .number {
     font-size: 1.5rem;
@@ -280,7 +309,7 @@
     padding: 12px 24px;
     font-size: 0.9rem;
     background-color: var(--accent-color);
-    color: white;
+    color: #48D1CC;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -293,19 +322,20 @@
   }
   /* INVITADO y PASES */
   #guest-name-section {
-    background-color: #faf3ce8a;
+    background-color: #186b76;
   }
   #passes-section{
-    background-color: #faf3ce;
+    background-color:#48D1CC;
   }
   #guest-name-section p, #passes-section p {
     font-size: var(--font-size-text);
+    color: white;
   }
   /* ITINERARIO */
   #itinerary-section {
-    background: transparent;
-    border-radius: 10px;
+    background-color: transparent;
   }
+  
   #itinerary-section h2{
     font-size: var(--font-size-title-small);
   }
@@ -352,8 +382,8 @@
   .bank-toggle {
     font-size: var(--font-size-text);
     padding: 12px 24px;
-    background-color: var(--accent-color);
-    color: white;
+    background-color: rgb(248, 244, 237);
+    color: var(--text-color);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -364,6 +394,7 @@
     transition: background 0.3s;
     font-family: var(--font-body);
     margin: 10px auto;
+    box-shadow: var(--shadow);
   }
   .bank-toggle:hover {
     background-color: var(--text-color);
@@ -497,12 +528,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    position: relative;
+    z-index: 1; /* ✅ Lo traemos al frente */
+    margin-bottom: -37px;
   }
+  
   #wishes-section h2{
     font-size: var(--font-size-title-small);
+    color: #48D1CC;
   }
   #wishes-section p{
     font-size: var(--font-size-text);
+    color: #48D1CC;
   }  
   #show-wishes button {
     margin-top: 10px;
@@ -531,7 +568,7 @@
     font-family: var(--font-body, Arial, sans-serif);
     font-size: 1rem;
     background-color: #fff;
-    color: #6b5c53;
+    color: #48D1CC;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
   }
   
@@ -544,7 +581,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     background-color: var(--accent-color);
-    color: white;
+    color: #48D1CC;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -638,16 +675,17 @@
   
   /* FRASE FINAL */
   #final-message-section {
-    background-color: #faf3ce8a;
-    margin-top: -10px;
+    background-color: #48d1cd9f;
+    margin-top: -5px;
   }
   #final-message-section p{
     font-size: var(--font-size-subtitle);
+    color: white;
   }
   
   /* FOOTER */
   footer {
-    background: var(--text-color);
+    background: #186b76;
     color: white;
     padding: 20px;
     text-align: center;
@@ -665,7 +703,6 @@
   }
 
   #footer {
-    background-color: var(--accent-color);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -704,15 +741,82 @@
     opacity: 1;
     transform: translateY(0);
   }
+  .hotel-intro {
+    background-color: rgba(119, 119, 119, 0.173); /* Blanco semitransparente */
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: var(--font-size-text);
+    max-width: 90%;
+    margin: 20px auto;
+    color: white;
+  }
+  
+  #hotel-section {
+    background-image: url('/images/playa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 0 ;
+  }
+  #hotel-section h2 {
+    font-size: var(--font-size-title-small);
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .hotel-toggle {
+    background-color: var(--accent-color);
+    color: #48D1CC;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    border: none;
+    border-radius: 6px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer; /* ← esto es clave */
+    box-shadow: var(--shadow);
+    display: block;
+  }
+  .hotel-content {
+    max-width: 600px;
+    margin: 10px auto 30px auto;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    align-items: center;
+  }
+  
+  .hotel-content p {
+    font-size: var(--font-size-text);
+    line-height: 1.5;
+    color: #48D1CC;
+  }
+  
+  .hotel-content a {
+    color: #48D1CC;
+    text-decoration: none;
+  }
+  .hidden {
+    display: none !important;
+  }
+  
+  .hotel-toggle {
+    cursor: pointer;
+  }
   
   /* RESPONSIVE */
   @media (max-width: 768px) {
     h1 {
-      font-size: 2.1rem;
+      font-size: 2.7rem;
     }
     
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     
     p {

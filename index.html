@@ -11,7 +11,7 @@
   <script type="module" src="database.js" defer></script> <!-- ✅ PRIMERO database -->
   <script type="module" src="script.js" defer></script>   <!-- ✅ LUEGO script -->
   
-  <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carattere&amp;family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -145,6 +145,29 @@
         <button id="submit-wish">Enviar</button>
       </div>
     </section>
+
+    <section id="hotel-section">
+      <h2>Hospedaje</h2>
+      <p class="hotel-intro">Para la reserva del hotel sugerimos las siguientes opciones:</p>
+    
+      <div class="hotel-accordion">
+        <button class="hotel-toggle" data-target="option1">Correo directo</button>
+        <div id="option1" class="hotel-content hidden">
+          <p><a href="mailto:cancun.eventas2@hotelesemporio.com?subject=Boda Fonseca">cancun.eventas2@hotelesemporio.com</a></p>
+        </div>
+    
+        <button class="hotel-toggle" data-target="option2">Página Web</button>
+        <div id="option2" class="hotel-content hidden">
+          <p><a href="https://reservas.hotelesemporio.com/bookcore/availability/rooms/hecancun?cp=HIGH5" target="_blank">Haz clic aquí para reservar</a></p>
+        </div>
+    
+        <button class="hotel-toggle" data-target="option3">Otros medios</button>
+        <div id="option3" class="hotel-content hidden">
+          <p>Puedes usar Booking o el medio de tu preferencia.</p>
+        </div>
+      </div>
+    </section>
+    
 
     <!-- Confirmación -->
     <section id="rsvp-section">
