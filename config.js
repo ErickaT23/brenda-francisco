@@ -44,7 +44,7 @@ export const eventData = {
       }
     },  
 
-    finalPhoto: "/images/foto-final.png",
+    finalPhoto: "/images/pareja-final.png",
     finalMessage: "Acompáñanos en el inicio de nuestro Felices Para Siempre",
     rsvp: {
       rsvpImage: "/images/rsvp.png",
