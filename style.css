@@ -4,7 +4,7 @@
     --background-color: white;
     --amarillo: #fff7cc;
     --beige:#faefb2;
-    --text-color: #48D1CC;
+    --text-color: #2FA2A1;
     --accent-color: white;
     
     /* Tipografías */
@@ -103,7 +103,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-title);
     font-size: 2rem;
     color: var(--text-color);
     cursor: pointer;
@@ -112,7 +111,8 @@
   #seal h2{
     margin: 0;
     font-size: 2.5rem;
-    color: #48D1CC;
+    color: #2FA2A1;
+    font-family: var(--font-body);
   }
   /* Estado de apertura */
   .open #envelope-top {
@@ -167,11 +167,11 @@
     position: relative;
   }
   #music-section h2{
-    color: 	#48D1CC;
+    color: 	#2FA2A1;
   }
   button {
     background: rgb(248, 244, 237);
-    color: 	#48D1CC;
+    color: 	#2FA2A1;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -185,6 +185,7 @@
   }
   button:hover {
     background: var(--text-color);
+    color: white;
   }
   
   /* PROGRESO DE MÚSICA */
@@ -200,7 +201,7 @@
   -webkit-appearance: none;
   width: 80%;
   height: 8px;
-  background: 	#48D1CC; /* Color pastel base */
+  background: 	#2FA2A1; /* Color pastel base */
   border-radius: 5px;
   outline: none;
   margin: 10px 0;
@@ -251,7 +252,7 @@
     margin-top: -35px;
   }
   #marriage-announcement {
-    background-color: rgba(119, 119, 119, 0.212); /* blanco con opacidad */
+    background-color: rgb(119 119 119 / 27%); /* blanco con opacidad */
     padding: 20px;
     border-radius: 10px;
   }
@@ -259,7 +260,6 @@
   #marriage-announcement {
     text-align: center;
     margin-bottom: 30px;
-    padding: 0;
   }
   #marriage-announcement h2 {
     font-family: var(--font-title);
@@ -283,7 +283,7 @@
     margin-top: 20px;
   }
   .unit {
-    background: rgba(119, 119, 119, 0.212);
+    background: rgb(119 119 119 / 27%);
     padding: 0;
     border-radius: 100%;
     width: 100px;
@@ -309,7 +309,7 @@
     padding: 12px 24px;
     font-size: 0.9rem;
     background-color: var(--accent-color);
-    color: #48D1CC;
+    color: #2FA2A1;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -535,11 +535,11 @@
   
   #wishes-section h2{
     font-size: var(--font-size-title-small);
-    color: #48D1CC;
+    color: #2FA2A1;
   }
   #wishes-section p{
     font-size: var(--font-size-text);
-    color: #48D1CC;
+    color: #2FA2A1;
   }  
   #show-wishes button {
     margin-top: 10px;
@@ -568,7 +568,7 @@
     font-family: var(--font-body, Arial, sans-serif);
     font-size: 1rem;
     background-color: #fff;
-    color: #48D1CC;
+    color: #2FA2A1;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
   }
   
@@ -581,7 +581,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     background-color: var(--accent-color);
-    color: #48D1CC;
+    color: #2FA2A1;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -768,7 +768,7 @@
   }
   .hotel-toggle {
     background-color: var(--accent-color);
-    color: #48D1CC;
+    color: #2FA2A1;
     padding: 12px 24px;
     font-size: 1rem;
     font-family: var(--font-body);
@@ -794,11 +794,11 @@
   .hotel-content p {
     font-size: var(--font-size-text);
     line-height: 1.5;
-    color: #48D1CC;
+    color: #2FA2A1;
   }
   
   .hotel-content a {
-    color: #48D1CC;
+    color: #2FA2A1;
     text-decoration: none;
   }
   .hidden {
