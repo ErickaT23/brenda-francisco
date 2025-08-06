@@ -250,6 +250,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed; /* opcional: para efecto parallax suave */
     margin-top: -35px;
+    padding: 40px 20px;
   }
   #marriage-announcement {
     background-color: rgb(165 165 165 / 57%); /* blanco con opacidad */
@@ -260,6 +261,7 @@
   #marriage-announcement {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 10px;
   }
   #marriage-announcement h2 {
     font-family: var(--font-title);
@@ -303,7 +305,7 @@
   }
   #calendar-button {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   #calendar-button button {
     padding: 12px 24px;
