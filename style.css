@@ -564,6 +564,7 @@
   #final-message-section {
     background-color: #48d1cd9f;
     margin-top: -5px;
+    padding: 30px 10px;
   }
   #final-message-section p{
     font-size: var(--font-size-subtitle);
