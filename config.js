@@ -11,7 +11,7 @@ export const eventData = {
     ceremony: {
       ceremonyImage:"/images/ceremonia.png",
       place: "Hotel Emporio Cancún",
-      address: "Blvd. Kukulcán, Retorno Gucumatz Km 17, Segunda Etapa, Zona Hotelera, Cancún, Q.R., México",
+      address: "¡Un sí con los pies en la arena!",
       date: "26 de Febrero",
       time: "16:30 hrs",
       mapLink: "https://maps.app.goo.gl/EuDBJDjDVKTorNGE6"
@@ -19,20 +19,19 @@ export const eventData = {
     reception: {
       receptionImage:"/images/recepcion.png",
       place: "Hotel Emporio Cancún",
-      address: "Terraza principal",
+      address: "¡La fiesta sigue en la terraza principal!",
       date: "26 de Febrero",
       time: "17:30 hrs",
       mapLink: "https://maps.app.goo.gl/EuDBJDjDVKTorNGE6"
     },
     banks: [
       {
-        bank: "Banco Del Universo",
-        accountName: "Isa & Roberto",
-        accountNumber: "0112233-444",
-        accountType: "Monetaria"
+        bank: "Cuenta B&F",
+        accountNumber: "40-3033071-0",
+        accountType: "Cuenta de Ahorros",
       },
     ],
-    abroadGiftMessage: "Lo más importante es tu presencia, pero si deseas hacernos un regalo aquí tienes nuestros datos. ¡Muchas gracias!",
+    abroadGiftMessage: "Pero si deseas sumar un detalle especial, aquí están nuestros datos.",
     giftImage: "/images/gift.png",
     
     dresscode: {
@@ -45,7 +44,7 @@ export const eventData = {
     },  
 
     finalPhoto: "/images/pareja-final.png",
-    finalMessage: "Acompáñanos en el inicio de nuestro Felices Para Siempre",
+    finalMessage: "Esperamos con ilusión poder celebrar juntos este momento tan especial",
     rsvp: {
       rsvpImage: "/images/rsvp.png",
       form: "https://forms.gle/F5ZgUEJgVDZU89ZSA",

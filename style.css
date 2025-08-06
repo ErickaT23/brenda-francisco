@@ -38,7 +38,7 @@
   
   /* SECCIONES GENERALES */
   section {
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
   }
   
@@ -252,7 +252,7 @@
     margin-top: -35px;
   }
   #marriage-announcement {
-    background-color: rgb(119 119 119 / 27%); /* blanco con opacidad */
+    background-color: rgb(165 165 165 / 57%); /* blanco con opacidad */
     padding: 20px;
     border-radius: 10px;
   }
@@ -283,7 +283,7 @@
     margin-top: 20px;
   }
   .unit {
-    background: rgb(119 119 119 / 27%);
+    background: rgb(165 165 165 / 57%);
     padding: 0;
     border-radius: 100%;
     width: 100px;
@@ -323,14 +323,33 @@
   /* INVITADO y PASES */
   #guest-name-section {
     background-color: #186b76;
+    padding: 20px;
   }
-  #passes-section{
-    background-color:#48D1CC;
+  
+  #passes-section {
+    background-color: #48D1CC;
+    padding: 20px;
   }
-  #guest-name-section p, #passes-section p {
-    font-size: var(--font-size-text);
+  
+  #guest-name-section .guest-title {
+    font-size: 1.5rem;
     color: white;
   }
+  
+  #guest-name-section .guest-message {
+    font-size: 1.1rem;
+    color: white;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  #passes-section p {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
   /* ITINERARIO */
   #itinerary-section {
     background-color: transparent;
@@ -362,6 +381,7 @@
   #gift-section {
     background: transparent;
     border-radius: 10px;
+    margin-top: 0;
   }
   #gift-section h2 {
     font-size: var(--font-size-title-small);
@@ -373,11 +393,10 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #gift-section {
     text-align: center;
-    padding: 30px 20px;
+    padding: 10px 20px;
   }
   .bank-toggle {
     font-size: var(--font-size-text);
@@ -421,32 +440,9 @@
     color: var(--text-color);
     font-size: var(--font-size-text);
   }
-  /* PLAYLIST */
-  #playlist-section {
-    background: transparent;
-    border-radius: 10px;
-  }
-  #playlist-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 50px;
-  }
-  #playlist-button{
-    margin-top: 10px;
-    font-family: var(--font-body);
-    font-size: var(--font-size-text);
-  }
-  #playlist-section h2{
-    font-size: var(--font-size-title-small);
-  }
-  #playlist-section p{
-    font-size: var(--font-size-text);
-  }
   /* DRESS CODE */
   #dresscode-section {
     background: transparent;
-    border-radius: 10px;
   }
   #dresscode-section h2{
     font-size: var(--font-size-title-small);
@@ -458,67 +454,13 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #dresscode-inspo button{
     margin-top: 10px;
     font-family: var(--font-body);
     font-size: var(--font-size-text);
   }
-  /* GALERÍA */
-  #gallery-section {
-    background: transparent;
-    border-radius: 10px;
-  }
-  #gallery-section h2{
-    font-size: var(--font-size-title-small);
-  }
-  #gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  #gallery-container img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  #gallery-container img:hover {
-    transform: scale(1.05);
-  }
   /* Modal */
-.modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-.modal img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-#modal-close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 60px;
-  color: white;
-  cursor: pointer;
-  z-index: 10000;
-}
 .hidden {
   display: none !important;
 }
@@ -593,59 +535,6 @@
   #wish-form button:hover {
     background-color: var(--text-color);
   }
-  
-  /* NO NIÑOS */
-  #no-children-section {
-    background: transparent;
-    border-radius: 10px;
-  }
-  #no-children-section h2{
-    font-size: var(--font-size-title-small);
-  }
-  #no-children-section p{
-    font-size: var(--font-size-text);
-  }
-  /* ÁLBUM */
-  #album-section {
-    background-color: #fbf5ef;
-    border-radius: 10px;
-  }
-  #album-section h2{
-    font-size: var(--font-size-title-small);
-  }
-  #album-section h3{
-    font-size: var(--font-size-subtitle);
-  }
-  #qr-album {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #album-section p{
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: var(--font-size-text);
-  }
-  #upload-photos{
-    font-size: 1rem;
-    padding: 12px 24px;
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: var(--shadow);
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    transition: background 0.3s;
-    font-family: var(--font-body);
-    text-decoration: none;
-    margin-top: 20px;
-    font-size: var(--font-size-text);
-  }
   /* CONFIRMACIÓN */
   #rsvp-section {
     background: transparent;
@@ -661,7 +550,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   /* FOTO FINAL */
   #final-photo-section{
@@ -672,7 +560,6 @@
     width: 100%;
     height: auto;
   }
-  
   /* FRASE FINAL */
   #final-message-section {
     background-color: #48d1cd9f;
@@ -682,7 +569,6 @@
     font-size: var(--font-size-subtitle);
     color: white;
   }
-  
   /* FOOTER */
   footer {
     background: #186b76;
@@ -725,10 +611,9 @@
   }
   
   .footer-logo img {
-    width: 100px;
+    width: 70px;
     height: auto;
   }
-  
   
   /* ANIMACIONES SCROLL */
   section {
@@ -741,17 +626,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-  .hotel-intro {
-    background-color: rgba(119, 119, 119, 0.173); /* Blanco semitransparente */
-    padding: 12px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: var(--font-size-text);
-    max-width: 90%;
-    margin: 20px auto;
-    color: white;
-  }
-  
+  /* SECCIÓN HOTEL */
   #hotel-section {
     background-image: url('/images/playa.png');
     background-size: cover;
@@ -766,6 +641,28 @@
     margin-bottom: 20px;
     margin-top: 40px;
   }
+  .hotel-info-box {
+    background-color:rgb(165 165 165 / 57%); /* Fondo uniforme */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .hotel-info-box .hotel-intro {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+  }
+  
+  .hotel-info-box .hotel-description {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+  
   .hotel-toggle {
     background-color: var(--accent-color);
     color: #2FA2A1;

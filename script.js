@@ -98,7 +98,7 @@ window.addToCalendar = function () {
     const details = document.createElement('div');
     details.className = 'bank-details collapse';
     details.innerHTML = `
-      <p><strong>Cuenta a nombre de:</strong> ${bank.accountName}</p>
+      <p><strong>Banco Agromercantil</strong></p>
       <p><strong>Número de cuenta:</strong> ${bank.accountNumber}</p>
       <p><strong>Tipo de cuenta:</strong> ${bank.accountType}</p>
     `;
@@ -176,13 +176,12 @@ document.getElementById('show-wishes').addEventListener('click', () => {
 
   // --- Confirmaciones ---
   document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
-  document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 01 de Junio, o bien indicarnos si no podrás acompañarnos.";
-  document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
+  document.getElementById('rsvp-message').innerText = "Estamos organizando todo con mucho cariño y tu presencia es parte importante. ¿Nos confirmas si podrás acompañarnos?"; document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
 
   // --- Footer (redes sociales) ---
   const socialIcons = document.getElementById('social-icons');
 
-socialIcons.innerHTML = `
+/*socialIcons.innerHTML = `
   <a href="${eventData.footer.social.whatsapp}" target="_blank" aria-label="whatsapp">
     <i class="fab fa-whatsapp"></i>
   </a>
@@ -192,7 +191,7 @@ socialIcons.innerHTML = `
   <a href="${eventData.footer.social.instagram}" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
-`;
+`;*/
 
 document.getElementById('footer-logo').src = eventData.footer.logo;
 
