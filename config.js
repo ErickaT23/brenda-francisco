@@ -35,7 +35,7 @@ export const eventData = {
     giftImage: "/images/gift.png",
     
     dresscode: {
-      description: "Hemos dejado estos links de inspiración para que puedas elegir tu atuendo. Reservado queda el color blanco e ivory para la novia.",
+      description: "Para ayudarte a elegir tu atuendo, hemos preparado algunas ideas que pueden inspirarte. El blanco y el ivory están reservados para la novia.",
       image: "/images/dresscode.png",
       inspiration: {
         women: "https://es.pinterest.com/search/pins/?q=boda%20en%20la%20playa%20vestimenta%20invitados%20mujeres&rs=typed",
