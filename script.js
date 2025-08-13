@@ -176,8 +176,9 @@ document.getElementById('show-wishes').addEventListener('click', () => {
 
   // --- Confirmaciones ---
   document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
-  document.getElementById('rsvp-message').innerText = "Estamos organizando todo con mucho cariño y tu presencia es parte importante. ¿Nos confirmas si podrás acompañarnos?"; document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
-
+  document.getElementById('rsvp-message').innerText = "Estamos organizando todo con mucho cariño y tu presencia es parte importante. ¿Nos confirmas si podrás acompañarnos?";
+  document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
+  
   // --- Footer (redes sociales) ---
   const socialIcons = document.getElementById('social-icons');
 
