@@ -175,9 +175,15 @@ document.getElementById('show-wishes').addEventListener('click', () => {
   document.getElementById('final-message').innerText = eventData.finalMessage;
 
   // --- Confirmaciones ---
-  document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
-  document.getElementById('rsvp-message').innerText = "Estamos organizando todo con mucho cariño y tu presencia es parte importante. ¿Nos confirmas si podrás acompañarnos?";
-  document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
+  // --- Confirmaciones (esperar a que loads.js haya definido eventData.rsvp) ---
+setTimeout(() => {
+  if (eventData.rsvp) {
+    document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
+    document.getElementById('rsvp-message').innerText = "Estamos organizando todo con mucho cariño y tu presencia es parte importante. ¿Nos confirmás si podrás acompañarnos?";
+    document.getElementById('form-confirm').onclick = () => window.open(eventData.rsvp.form, '_blank');
+  }
+}, 300); // Espera 300ms a que loads.js defina el form
+
   
   // --- Footer (redes sociales) ---
   const socialIcons = document.getElementById('social-icons');
