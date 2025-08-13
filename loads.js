@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const passesSection = document.getElementById('passes');
     passesSection.textContent =
       `${guest.passes} ${guest.passes === 1 ? 'lugar reservado con cariño.' : 'lugares reservados con cariño.'}`;
-  
-    // ✅ Sección: Confirmación RSVP dinámica
-    if (!window.eventData) window.eventData = {};
-    window.eventData.rsvp = {
-      rsvpImage: "/images/rsvp.png",
-      form: `https://docs.google.com/forms/d/e/1FAIpQLSdAcHTQU0WBzqMlkJ4tIUVqY60DOG9GiDr0mCbFcBDhxmjITw/viewform?usp=pp_url&entry.42292443=${encodeURIComponent(guest.name)}&entry.800985369=${guest.passes}`
-    };
+
+      if (!window.eventData) window.eventData = {};
+
+window.eventData.rsvp = {
+  rsvpImage: "/images/rsvp.png",
+  form: `https://docs.google.com/forms/d/e/1FAIpQLSdAcHTQU0WBzqMlkJ4tIUVqY60DOG9GiDr0mCbFcBDhxmjITw/viewform?usp=pp_url&entry.42292443=${encodeURIComponent(guest.name)}&entry.800985369=${guest.passes}`
+};
   
   } else {
     document.getElementById('guest-name').textContent = `¡Invitado no encontrado!`;
