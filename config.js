@@ -47,7 +47,7 @@ export const eventData = {
     finalMessage: "Esperamos con ilusión poder celebrar juntos este momento tan especial",
     rsvp: {
       rsvpImage: "/images/rsvp.png",
-      form: "https://forms.gle/F5ZgUEJgVDZU89ZSA",
+      form: "https://docs.google.com/forms/d/e/1FAIpQLSdAcHTQU0WBzqMlkJ4tIUVqY60DOG9GiDr0mCbFcBDhxmjITw/viewform?usp=pp_url&entry.42292443=Papi+%26+Mami&entry.800985369=2",
     },
     footer: {
       social: {
