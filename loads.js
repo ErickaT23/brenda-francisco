@@ -1,8 +1,27 @@
 const guests = [
-  { id: "1", name: "Anabella & Leandro", passes: 2 },
-  { id: "2", name: "Macarena & Rogelio", passes: 2 },
-  { id: "3", name: "Lucía", passes: 1 },
-  { id: "4", name: "Carlos", passes: 1 }
+  { id: "1", name: "Papi & Mami", passes: 2 },
+  { id: "2", name: "Chino, Steph, André & Ari", passes: 4 },
+  { id: "3", name: "Geoa & Ana", passes: 2 },
+  { id: "4", name: "Rodrigo & Cori", passes: 2 },
+  { id: "5", name: "Kathy", passes: 1 },
+  { id: "6", name: "Jorge & Aura", passes: 2 },
+  { id: "7", name: "Sergio & Ingrid", passes: 2 },
+  { id: "8", name: "Mayra", passes: 1 },
+  { id: "9", name: "Max & Josefina", passes: 2 },
+  { id: "10", name: "Richard & Angelica", passes: 2 },
+  { id: "11", name: "Rafael & Miriam", passes: 2 },
+  { id: "12", name: "Adriana", passes: 1 },
+  { id: "13", name: "Coco & Robyn", passes: 2 },
+  { id: "14", name: "Abner & Edlin", passes: 2 },
+  { id: "15", name: "Koko & Karina", passes: 2 },
+  { id: "16", name: "Tía Carmen", passes: 1 },
+  { id: "17", name: "Estefanía & Vale", passes: 2 },
+  { id: "18", name: "Alejandro, Andrea, Anita & Ari", passes: 4 },
+  { id: "19", name: "Rebeca", passes: 1 },
+  { id: "20", name: "Linda", passes: 1 },
+  { id: "21", name: "Barbarito & Frida", passes: 2 },
+  { id: "22", name: "Cherry & Zoe", passes: 2 },
+  { id: "23", name: "Paco & Marga", passes: 2 }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
