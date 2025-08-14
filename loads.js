@@ -1,7 +1,7 @@
 const guests = [
   { id: "1", name: "Papi & Mami", passes: 2 },
   { id: "2", name: "Chino, Steph, André & Ari", passes: 4 },
-  { id: "3", name: "Geoa & Ana", passes: 2 },
+  { id: "3", name: "Geova & Ana", passes: 2 },
   { id: "4", name: "Rodrigo & Cori", passes: 2 },
   { id: "5", name: "Kathy", passes: 1 },
   { id: "6", name: "Jorge & Aura", passes: 2 },
