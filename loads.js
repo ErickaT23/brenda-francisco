@@ -6,7 +6,7 @@ const guests = [
   { id: "5", name: "Kathy", passes: 1 },
   { id: "6", name: "Jorge & Aura", passes: 2 },
   { id: "7", name: "Sergio & Ingrid", passes: 2 },
-  { id: "8", name: "Mayra", passes: 1 },
+  { id: "8", name: "Walter & Mayra", passes: 1 },
   { id: "9", name: "Max & Josefina", passes: 2 },
   { id: "10", name: "Richard & Angelica", passes: 2 },
   { id: "11", name: "Rafael & Miriam", passes: 2 },
