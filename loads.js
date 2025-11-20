@@ -31,7 +31,9 @@ const guests = [
   { id: "30", name: "Juan Marcos y Mariana", passes: 2 },
   { id: "31", name: "Nati", passes: 1 },
   { id: "32", name: "Dani", passes: 1 }, 
-  { id: "33", name: "Gaby", passes: 1 }
+  { id: "33", name: "Gaby", passes: 1 },
+  { id: "34", name: "Andrea y Eduardo", passes: 2 },
+  { id: "35", name: "Javi y Dani", passes: 2 }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
